@@ -7,7 +7,7 @@ function Sobre() {
       <div className="container content-sobre w-full md:w-2/3">
         <h2 className="text-primary-color mb-5 text-3xl">Sobre</h2>
         <p className="text-text-color mb-4">
-          Meu nome é Danillo, tenho 22 anos e sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e também em <strong>Gestão Financeira</strong>. Meu objetivo é atuar como <strong>desenvolvedor</strong>, contribuindo com soluções práticas e eficientes para os desafios da tecnologia, sempre com foco em aprendizado contínuo, trabalho em equipe e evolução profissional.
+          Meu nome é Danillo, tenho 22 anos e sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e também em <strong>Gestão Financeira</strong>. Meu objetivo é contribuir com soluções práticas e eficientes para os desafios da tecnologia, sempre com foco em aprendizado contínuo, trabalho em equipe e evolução profissional.
         </p>
         <p className="text-text-color mb-4">
           Durante minha trajetória, desenvolvi projetos que me permitiram consolidar conhecimentos em diferentes áreas. No desenvolvimento web, utilizo <strong>HTML, CSS, JavaScript, React</strong> e <strong>Node.js</strong> para criar aplicações. Em automação de tarefas, tenho experiência com <strong>Python</strong> e <strong>JavaScript</strong>. Para análise e manipulação de dados, aplico técnicas com <strong>Python, PowerBI, Jupyter Notebook e Google Colab</strong>.
