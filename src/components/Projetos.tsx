@@ -16,6 +16,14 @@ interface Project {
 const Projetos: React.FC = () => {
   const [projects] = useState<Project[]>([
     {
+      images: ['DVFinance.gif', 'DvFinance.png'],
+      title: 'DV Finance',
+      description: 'Aplicação full stack para gerenciamento de clientes e ativos financeiros de um escritório de investimentos. Conta com backend em Node.js (TS + Fastify + Prisma), frontend em Next.js com React Query e estilização com Tailwind CSS e Shadcn UI. Utiliza banco de dados MySQL e Docker para containerização.',
+      cardprincipal: 'Full Stack Development',
+      tags: ['TypeScript', 'Node.js', 'Next.js', 'MySQL', 'Docker'],
+      linkGitHub: 'https://github.com/DanilloSouza03/DV-Finance'
+    },
+    {
       images: ['Logo PayTrack.png', 'paytrack01.png', 'paytrack02.png', 'videotrackapi.gif'],
       title: 'Pay Track API',
       description: 'API desenvolvida com FastAPI para gerenciar contas. Oferece funcionalidades de CRUD (criar, atualizar, listar e deletar), manipulando dados como nome, descrição, data, valor e situação das contas.',
