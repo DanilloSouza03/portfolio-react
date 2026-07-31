@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import perfil from '../assets/perfil.png';
 
 function Sobre() {
@@ -6,27 +5,65 @@ function Sobre() {
     <section id="sobre" className="flex flex-col md:flex-row w-full md:w-4/5 mx-auto overflow-hidden px-8 py-16">
       <div className="container content-sobre w-full md:w-2/3">
         <h2 className="text-primary-color mb-5 text-3xl">Sobre</h2>
-        <p className="text-text-color mb-4">
-          Meu nome é Danillo, tenho 22 anos e sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e também em <strong>Gestão Financeira</strong>. Meu objetivo é contribuir com soluções práticas e eficientes para os desafios da tecnologia, sempre com foco em aprendizado contínuo, trabalho em equipe e evolução profissional.
+
+        <p className="text-text-color mb-4 leading-8">
+          Meu nome é <strong>Danillo</strong>, tenho 23 anos e sou graduado em
+          <strong> Análise e Desenvolvimento de Sistemas</strong> e
+          <strong> Gestão Financeira</strong>. Atuo como desenvolvedor Full Stack,
+          criando aplicações completas, desde interfaces modernas e responsivas até o
+          desenvolvimento de APIs, integrações e regras de negócio, sempre priorizando
+          código limpo, escalabilidade e boas práticas de desenvolvimento.
         </p>
-        <p className="text-text-color mb-4">
-          Durante minha trajetória, desenvolvi projetos que me permitiram consolidar conhecimentos em diferentes áreas. No desenvolvimento web, utilizo <strong>HTML, CSS, JavaScript, React</strong> e <strong>Node.js</strong> para criar aplicações. Em automação de tarefas, tenho experiência com <strong>Python</strong> e <strong>JavaScript</strong>. Para análise e manipulação de dados, aplico técnicas com <strong>Python, PowerBI, Jupyter Notebook e Google Colab</strong>.
+
+        <p className="text-text-color mb-4 leading-8">
+          Tenho experiência no desenvolvimento de aplicações utilizando
+          <strong> PHP, JavaScript, NextJS, Node.js, HTML e CSS</strong>, além da construção
+          de APIs REST, integração com bancos de dados <strong>SQL</strong>, autenticação de usuários e
+          automação de processos com <strong>Python</strong>. Também utilizo ferramentas
+          como <strong>Docker</strong>, <strong>Postman</strong> e
+          <strong> Swagger/OpenAPI</strong> para padronização, documentação, testes e
+          implantação de aplicações.
         </p>
-        <p className="text-text-color mb-4">
-          Sou motivado por desafios que envolvem lógica, resolução de problemas e criação de soluções que geram impacto real.
-        </p>
-        <div className="linguagens mt-5 flex gap-4 text-4xl">
-          <FontAwesomeIcon icon={['fab', 'html5']} title="HTML" className="text-[#e34f26] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fab', 'css3-alt']} title="CSS" className="text-[#1572b6] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fab', 'js-square']} title="JavaScript" className="text-[#f7df1e] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fab', 'python']} title="Python" className="text-[#306998] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fab', 'react']} title="React" className="text-[#61dafb] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fab', 'node-js']} title="Node.js" className="text-[#68a063] transition-transform duration-400 hover:scale-125" />
-          <FontAwesomeIcon icon={['fas', 'database']} title="SQL" className="text-[#f29111] transition-transform duration-400 hover:scale-125" />
+      
+        <div className="flex flex-wrap gap-3 mt-8">
+          {[
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Next.js",
+            "Node.js",
+            "PHP",
+            "Python",
+            "SQL",
+            "MySQL",
+            "PostgreSQL",
+            "Docker",
+            "Git",
+            "GitHub",
+            "REST API",
+            "Swagger",
+            "Postman",
+          ].map((tech) => (
+            <span
+              key={tech}
+              className="px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-gray-300 text-sm font-medium transition-all duration-300 hover:border-blue-500 hover:text-white hover:shadow-[0_0_15px_rgba(59,130,246,.35)]"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
       </div>
       <div className="img-sobre mt-9 p-5 w-full md:w-1/2 md:mt-0 flex justify-center">
-        <img src={perfil} alt="Foto de Perfil" className="rounded-full w-full max-w-[345px] shadow-[0_0_23px_#0074E4]" />
+        <a href="https://www.linkedin.com/in/danillosouza03/" target="_blank" rel="noopener noreferrer">
+          <img
+              src={perfil}
+              alt="Foto de Perfil"
+              className="rounded-full w-full max-w-[345px]
+                        shadow-[0_0_25px_#3b82f6]
+                        transition-all duration-500
+                        hover:scale-105 hover:shadow-[0_0_40px_#3b82f6]"
+            />     
+        </a>
       </div>
     </section>
   );
